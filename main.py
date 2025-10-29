@@ -1,4 +1,7 @@
 from random import randint
+
+# main game function 
+
 def funct():
   random_num = randint(1,100)
   user_number = -1
@@ -11,6 +14,8 @@ def funct():
       elif(user_number > random_num):
         print("oh nooooo! You selected a higher number. Now go for a lower number : ")
   print(f'''eemmmmm you have guessed the right number {random_num} in {guess} attempts ''')
+
+#to make user keep playing
 
 while True:
   funct()
